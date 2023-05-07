@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import css from './Controls.module.css';
 
 function Controls({ options, onLeaveFeedBack }) {
   return (
@@ -8,6 +9,7 @@ function Controls({ options, onLeaveFeedBack }) {
           <button
             type="button"
             key={option}
+            class={css.controls}
             onClick={() => onLeaveFeedBack(option)}
           >
             {option}
